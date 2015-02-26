@@ -1,6 +1,7 @@
 #!usr/bin/env python3
 
 import json
+from equipement import Equipement
 
 
 class readEquipment:
@@ -12,14 +13,17 @@ class readEquipment:
 
 	def readFileEquipment(self):
 		with open("json/dataEquipement.paysdelaloire.fr.json") as data :
-			self.json_data = json.load(data)
+			json_data = json.load(data)
 
 			for item in json_data["data"]:
-				equip = Equipement(item["ComInsee"], item["ComLib"]), item["EquipementId"], item["EquNbEquIdentique"],
-								   item[""], item[""], item[""])
+				self.collectionEquipment.append(Equipement(item["ComInsee"],
+														   item["ComLib"],
+														   item["EquipementTypeLib"],
+								  						   item["EquipementFiche"], 
+								  						   item["FamilleFicheLib"]))
 
 
-		print(self.json_data["data"][0])
+		
  
 
 	#def createObjectEquipment(self):

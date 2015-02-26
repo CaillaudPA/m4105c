@@ -1,13 +1,12 @@
-class installation:
+class Installation:
 
 
-	def __init__(self, name, numberInstall, town, insee, zipCode, locality, numbPath, libellePath,
+	def __init__(self, town, insee, zipCode, locality, numbPath, libellePath, namePath,
 				longitude, latitude, accessibilityNothing, accessibiliteHandiMoteur, accessibiliteHandiSens,
 				empriseFonciere, gardiennee, multiCommune, nbPlaceParking, nbPlaceParkingHandi, 
 				particularInstalation, transportMetro, transportBus, transportTram, transportTrain, transportBoat,
 				otherTransport, number_Equipements, number_FicheEquipemenDateMaj):
-		self.name = name
-		self.numberInstall = numberInstall
+		
 		self.town = town
 		self.insee = insee
 		self.zipCode = zipCode
@@ -34,5 +33,8 @@ class installation:
 		self.otherTransport = otherTransport
 		self.number_Equipements = number_Equipements
 		self.number_FicheEquipemenDateMaj = number_FicheEquipemenDateMaj
+
+	def __str__(self):
+		return self.gardiennee
 		
 
