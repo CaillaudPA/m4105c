@@ -35,6 +35,6 @@ class Installation:
 		self.number_FicheEquipemenDateMaj = number_FicheEquipemenDateMaj
 
 	def __str__(self):
-		return self.gardiennee
-		
+		return self.town 
+				
 

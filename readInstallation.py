@@ -42,8 +42,4 @@ class ReadInstallation:
 
 	
 
-tmp = ReadInstallation()
-tmp.readInstallationMethod()
 
-for i in tmp.collectionInstallation:
-	print(i)
