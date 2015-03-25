@@ -6,14 +6,14 @@ from installation import Installation
 class ReadInstallation:
 
 	def __init__(self):
-		self.collectionInstallation = []
+		self.collection_installation = []
 
-	def readInstallationMethod(self):
+	def read_installation_method(self):
 		with open("json/dataInstallation.paysdelaloire.fr.json") as data:
 			self.json_data = json.load(data)
 			
 			for item in self.json_data["data"]:
-				self.collectionInstallation.append(Installation(item["ComLib"],
+				self.collection_installation.append(Installation(item["ComLib"],
 																item["ComInsee"],
 																item["InsCodePostal"],
 																item["InsLieuDit"],

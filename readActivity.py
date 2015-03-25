@@ -2,19 +2,19 @@
 
 import json
 
-from activite import Activity
+from Activity import Activity
 
 class ReadActivity:
 
 	def __init__(self):
-		self.collectionActivity = []
+		self.collection_activity = []
 
 	def readActivityMethod(self):
 		with open("json/dataActivite.paysdelaloire.fr.json") as data:
 			self.json_data = json.load(data)
 
 			for item in self.json_data["data"]:
-				self.collectionActivity.append(Activity(item["ComInsee"],
+				self.collection_activity.append(Activity(item["ComInsee"],
 														item["ComLib"],
 														item["EquipementId"],
 														item["EquNbEquIdentique"],
@@ -26,16 +26,7 @@ class ReadActivity:
 														item["ActNivLib"]))
 
 
-tmp = ReadActivity()
-tmp.readActivityMethod()
 
-
-for i in tmp.collectionActivity:
-	try:
-		print(i.comLib)
-		print(len(tmp.collectionActivity))
-	except Exception, e:
-		print("Valeur introuvable ?")
 
 
 

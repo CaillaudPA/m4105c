@@ -1,36 +1,28 @@
 #!usr/bin/env python3
 
 import json
-from equipement import Equipement
+from equipment import Equipment
 
 
-class readEquipment:
+class ReadEquipment:
 
 
 	def __init__(self):
-		self.collectionEquipment = []
+		self.collection_equipment = []
 
 
-	def readFileEquipment(self):
+	def read_equipment_method(self):
 		with open("json/dataEquipement.paysdelaloire.fr.json") as data :
 			json_data = json.load(data)
 
 			for item in json_data["data"]:
-				self.collectionEquipment.append(Equipement(item["ComInsee"],
+				self.collection_equipment.append(Equipment(item["ComInsee"],
 														   item["ComLib"],
-														   item["EquipementTypeLib"],
-								  						   item["EquipementFiche"], 
-								  						   item["FamilleFicheLib"]))
+														   item["EquipementId"],
+								  						   item["EquNbEquIdentique"], 
+								  						   item["ActCode"],
+								  						   item["ActLib"]))
 
 
 		
  
-
-	#def createObjectEquipment(self):
-
-
-
-
-
-tmp = readEquipment()
-tmp.readFileEquipment()

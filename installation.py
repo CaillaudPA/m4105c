@@ -1,38 +1,40 @@
+#!usr/bin/env python3
+
 class Installation:
 
 
-	def __init__(self, town, insee, zipCode, locality, numbPath, libellePath, namePath,
-				longitude, latitude, accessibilityNothing, accessibiliteHandiMoteur, accessibiliteHandiSens,
-				empriseFonciere, gardiennee, multiCommune, nbPlaceParking, nbPlaceParkingHandi, 
-				particularInstalation, transportMetro, transportBus, transportTram, transportTrain, transportBoat,
-				otherTransport, number_Equipements, number_FicheEquipemenDateMaj):
+	def __init__(self, town, insee, zip_code, locality, numb_path, libelle_path, name_path,
+				longitude, latitude, accessibility_nothing, accessibilite_handiMoteur, accessibilite_handiSens,
+				emprise_fonciere, gardiennee, multi_commune, nb_place_parking, nb_place_parking_handi, 
+				particular_instalation, transport_metro, transport_bus, transport_tram, transport_train, transport_boat,
+				other_transport, number_equipements, number_fiche_equipment_date_maj):
 		
 		self.town = town
 		self.insee = insee
-		self.zipCode = zipCode
+		self.zip_code = zip_code
 		self.locality = locality
-		self.numbPath = numbPath
-		self.libellePath = libellePath
-		self.namePath = namePath
+		self.numb_path = numb_path
+		self.libelle_path = libelle_path
+		self.name_path = name_path
 		self.longitude = longitude
 		self.latitude = latitude
-		self.accessibilityNothing = accessibilityNothing
-		self.accessibiliteHandiMoteur = accessibiliteHandiMoteur
-		self.accessibiliteHandiSens = accessibiliteHandiSens
-		self.empriseFonciere = empriseFonciere
+		self.accessibility_nothing = accessibility_nothing
+		self.accessibilite_handiMoteur = accessibilite_handiMoteur
+		self.accessibilite_handiSens = accessibilite_handiSens
+		self.emprise_fonciere = emprise_fonciere
 		self.gardiennee = gardiennee
-		self.multiCommune = multiCommune
-		self.nbPlaceParking = nbPlaceParking
-		self.nbPlaceParkingHandi = nbPlaceParkingHandi
-		self.particularInstalation = particularInstalation
-		self.transportMetro = transportMetro
-		self.transportBus = transportBus
-		self.transportTram = transportTram
-		self.transportTrain = transportTrain
-		self.transportBoat = transportBoat
-		self.otherTransport = otherTransport
-		self.number_Equipements = number_Equipements
-		self.number_FicheEquipemenDateMaj = number_FicheEquipemenDateMaj
+		self.multi_commune = multi_commune
+		self.nb_place_parking = nb_place_parking
+		self.nb_place_parking_handi = nb_place_parking_handi
+		self.particular_instalation = particular_instalation
+		self.transport_metro = transport_metro
+		self.transport_bus = transport_bus
+		self.transport_tram = transport_tram
+		self.transport_train = transport_train
+		self.transport_boat = transport_boat
+		self.other_transport = other_transport
+		self.number_equipements = number_equipements
+		self.number_fiche_equipement_date_maj = number_fiche_equipement_date_maj
 
 	def __str__(self):
 		return self.town 
