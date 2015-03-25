@@ -4,7 +4,7 @@ class Installation:
 
 
 	def __init__(self, town, insee, zip_code, locality, numb_path, libelle_path, name_path,
-				longitude, latitude, accessibility_nothing, accessibilite_handiMoteur, accessibilite_handiSens,
+				longitude, latitude, accessibility_nothing, accessibility_handi_moteur, accessibility_handi_sens,
 				emprise_fonciere, gardiennee, multi_commune, nb_place_parking, nb_place_parking_handi, 
 				particular_instalation, transport_metro, transport_bus, transport_tram, transport_train, transport_boat,
 				other_transport, number_equipements, number_fiche_equipment_date_maj):
@@ -19,8 +19,8 @@ class Installation:
 		self.longitude = longitude
 		self.latitude = latitude
 		self.accessibility_nothing = accessibility_nothing
-		self.accessibilite_handiMoteur = accessibilite_handiMoteur
-		self.accessibilite_handiSens = accessibilite_handiSens
+		self.accessibility_handi_moteur = accessibility_handi_moteur
+		self.accessibility_handi_sens = accessibility_handi_sens
 		self.emprise_fonciere = emprise_fonciere
 		self.gardiennee = gardiennee
 		self.multi_commune = multi_commune
@@ -34,7 +34,7 @@ class Installation:
 		self.transport_boat = transport_boat
 		self.other_transport = other_transport
 		self.number_equipements = number_equipements
-		self.number_fiche_equipement_date_maj = number_fiche_equipement_date_maj
+		self.number_fiche_equipment_date_maj = number_fiche_equipment_date_maj
 
 	def __str__(self):
 		return self.town 

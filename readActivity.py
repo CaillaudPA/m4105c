@@ -2,14 +2,14 @@
 
 import json
 
-from Activity import Activity
+from activity import Activity
 
 class ReadActivity:
 
 	def __init__(self):
 		self.collection_activity = []
 
-	def readActivityMethod(self):
+	def read_activity_method(self):
 		with open("json/dataActivite.paysdelaloire.fr.json") as data:
 			self.json_data = json.load(data)
 

@@ -6,7 +6,7 @@ class Activity:
 				equ_activity_salle_spe, act_level_lib):
 		self.com_insee = com_insee
 		self.com_lib = com_lib
-		self.equipement_id = equipment_id
+		self.equipment_id = equipment_id
 		self.equ_nb_equ_identique = equ_nb_equ_identique
 		self.act_code = act_code
 		self.act_lib = act_lib

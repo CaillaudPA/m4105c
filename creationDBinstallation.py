@@ -9,7 +9,7 @@ class CreationDBinstallation:
 		self.conn = sqlite3.connect('bd/installation.db')
 		self.c = self.conn.cursor()
 
-	def creationTableInstallation(self):
+	def creation_table_installation(self):
 		self.c.execute("DROP TABLE IF EXISTS installations")
 		self.c.execute('''CREATE TABLE installations
 		             (town text, insee text, zip_code text, locality text, numb_path text, libelle_path text, name_path text,
@@ -21,7 +21,7 @@ class CreationDBinstallation:
 		self.conn.commit()
 		#self.conn.close()
 
-	def ajoutInstallation(self, ins):
+	def add_installation(self, ins):
 		self.c.execute('''INSERT INTO installations VALUES
 					   (\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\", \"{5}\", \"{6}\", \"{7}\", \"{8}\", \"{9}\", \"{10}\", \"{11}\", \"{12}\", \"{13}\", \"{14}\", \"{15}\", \"{16}\", 
 					   \"{17}\", \"{18}\", \"{19}\", \"{20}\", \"{21}\", \"{22}\", \"{23}\", \"{24}\", \"{25}\")'''.format(ins.town, ins.insee, ins.zip_code, ins.locality, ins.numb_path, ins.libelle_path, ins.name_path,
@@ -30,7 +30,7 @@ class CreationDBinstallation:
 					   ins.particular_instalation, ins.transport_metro, ins.transport_bus, ins.transport_tram, ins.transport_train, ins.transport_boat,
 					   ins.other_transport, ins.number_equipements, ins.number_fiche_equipment_date_maj))
 	
-	def commitBD(self):
+	def commit_db(self):
 		self.conn.commit()
 
 
