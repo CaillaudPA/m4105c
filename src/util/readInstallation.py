@@ -13,7 +13,8 @@ class ReadInstallation:
 			self.json_data = json.load(data)
 			
 			for item in self.json_data["data"]:
-				self.collection_installation.append(Installation(item["ComLib"],
+				self.collection_installation.append(Installation(item["InsNumeroInstall"],
+																item["ComLib"],
 																item["ComInsee"],
 																item["InsCodePostal"],
 																item["InsLieuDit"],

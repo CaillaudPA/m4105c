@@ -5,11 +5,17 @@ import json
 from bean.activity import Activity
 
 class ReadActivity:
+	'''
+	Docstring for class ReadActivity
+	'''
 
 	def __init__(self):
 		self.collection_activity = []
 
 	def read_activity_method(self):
+		'''
+		Method used to read json file 
+		'''
 		with open("../../json/dataActivite.paysdelaloire.fr.json") as data:
 			self.json_data = json.load(data)
 
@@ -24,6 +30,8 @@ class ReadActivity:
 														item["EquActivitePratique"],
 														item["EquActiviteSalleSpe"],
 														item["ActNivLib"]))
+
+		
 
 
 

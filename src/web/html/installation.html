@@ -6,6 +6,7 @@
 <p> Ce site, vous pourrez trouver l'ensemble des installations, activités, et équipements sportif </p>
 
 <p>
+<a href="index">Acceuil</a><br/>
 <a href="all_installation" style="text-decoration:none">Consulter toutes les installations</a><br/>
 <a href="all_activity" style="text-decoration:none">Consulter toutes les activités</a><br/>
 <a href="all_equipment" style="text-decoration:none"> Consulter tous les équipements</a><br/>
@@ -14,32 +15,33 @@
 
 <table border=2>
 <tr>
-<td>ComLib</td>
-<td>ComInsee</td>
-<td>InsCodePostal</td>
-<td>InsLieuDit</td>
-<td>InsNoVoie</td>
-<td>InsLibelleVoie</td>
+<td>Numéro</td>
+<td>Commune</td>
+<td>Code INSEE</td>
+<td>Code Postal</td>
+<td>Lieu Dit</td>
+<td>N° Voie</td>
+<td>Nom de la voie</td>
 <td>Longitude</td>
 <td>Latitude</td>
-<td>InsAccessibiliteAucun</td>
-<td>InsAccessibiliteHandiMoteur</td>
-<td>InsAccessibiliteHandiSens</td>
-<td>InsEmpriseFonciere</td>
-<td>InsGardiennee</td>
-<td>InsMultiCommune</td>
-<td>InsNbPlaceParking</td>
-<td>InsNbPlaceParkingHandi</td>
-<td>InsPartLibelle</td>
-<td>InsTransportMetro</td>
-<td>InsTransportBus</td>
-<td>InsTransportTram</td>
-<td>InsTransportTrain</td>
-<td>InsTransportBateau</td>
-<td>InsTransportAutre</td>
-<td>Nb_Equipements</td>
-<td>Nb_FicheEquipement</td>
-<td>InsDateMaj</td>
+<td>Aucun aménagement d'accessibilité</td>
+<td>Accessibilité handicapés à mobilité réduite</td>
+<td>Accessibilité handicapés sensoriels</td>
+<td>Emprise foncière en m2</td>
+<td>Gardiennée</td>
+<td>Multi commune</td>
+<td>Nb place parking</td>
+<td>Nb place parking handi</td>
+<td>Installation particulière</td>
+<td>Metro</td>
+<td>Bus</td>
+<td>Tram</td>
+<td>Train</td>
+<td>Bateau</td>
+<td>Transport autre</td>
+<td>Nb équipements</td>
+<td>Nb fiche équipement</td>
+<td>Date de mise à jour de la fiche installation</td>
 </tr>
 
 
@@ -71,6 +73,7 @@
 	<td>${item[23]}</td>
 	<td>${item[24]}</td>
 	<td>${item[25]}</td>
+	<td>${item[26]}</td>
 	</tr>
 
 	%endfor

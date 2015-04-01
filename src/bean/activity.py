@@ -1,7 +1,10 @@
 #!usr/bin/env python3
 
 class Activity:
-
+	'''
+	This class represent an activity
+	All attribut are String
+	'''
 	def __init__(self, com_insee, com_lib, equipment_id, equ_nb_equ_identique, act_code, act_lib, equ_activity_praticable, equ_activity_pratique,
 				equ_activity_salle_spe, act_level_lib):
 		self.com_insee = com_insee

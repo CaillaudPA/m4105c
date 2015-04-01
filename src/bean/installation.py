@@ -1,14 +1,18 @@
 #!usr/bin/env python3
 
 class Installation:
+	'''
+	This class represent an installation
+	All attribut are String
+	'''
 
-
-	def __init__(self, town, insee, zip_code, locality, numb_path, libelle_path, name_path,
+	def __init__(self, id_inst, town, insee, zip_code, locality, numb_path, libelle_path, name_path,
 				longitude, latitude, accessibility_nothing, accessibility_handi_moteur, accessibility_handi_sens,
 				emprise_fonciere, gardiennee, multi_commune, nb_place_parking, nb_place_parking_handi, 
 				particular_instalation, transport_metro, transport_bus, transport_tram, transport_train, transport_boat,
 				other_transport, number_equipements, number_fiche_equipment_date_maj):
-		
+
+		self.id_inst = id_inst
 		self.town = town
 		self.insee = insee
 		self.zip_code = zip_code

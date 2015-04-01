@@ -6,8 +6,27 @@
 <p> Ce site, vous pourrez trouver l'ensemble des installations, activités, et équipements sportif </p>
 
 <p>
-<a href="all_installation" style="text-decoration:none">Consulter toutes les installations</a><br/>
-<a href="all_activity" style="text-decoration:none">Consulter toutes les activités</a><br/>
-<a href="all_equipment" style="text-decoration:none"> Consulter tous les équipements</a><br/>
-
+	<a href="index">Acceuil</a><br/>
+	<a href="all_installation" style="text-decoration:none">Consulter toutes les installations</a><br/>
+	<a href="all_activity" style="text-decoration:none">Consulter toutes les activités</a><br/>
+	<a href="all_equipment" style="text-decoration:none"> Consulter tous les équipements</a><br/>
 </p>
+
+<table border="2">
+	<tr>
+		<td>Code INSEE</td>
+		<td>Commune</td>
+		<td>Numéro de la fiche d'équipement</td>
+		<td>Nombre d'équipement identique</td>
+		<td>Nom équipement</td>
+	</tr>
+	%for item in equipment:
+	<tr>
+		<td>${item[0]}</td>
+		<td>${item[1]}</td>
+		<td>${item[2]}</td>
+		<td>${item[3]}</td>
+		<td>${item[4]}</td>
+	</tr>
+	%endfor
+</table>

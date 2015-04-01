@@ -17,7 +17,7 @@ class InsertAll():
 
 	"""docstring for InsertALl"""
 	def __init__(self):
-		
+		"""Declare a new object InsertALl able to create the data base"""
 		self.new_db = DB()		
 		allInstallation = ReadInstallation()
 		allInstallation.read_installation_method()
@@ -66,3 +66,4 @@ class InsertAll():
 
 		print("DB activity ok")
 
+		
